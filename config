@@ -1,0 +1,5 @@
+# Account 2 (work or personal) - the config we are adding
+Host github-rishjain
+   HostName github.com
+   User git
+   IdentityFile ~/.ssh/id_rsa_rishjain
