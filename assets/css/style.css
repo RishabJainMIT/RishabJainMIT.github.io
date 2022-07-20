@@ -94,6 +94,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #cfcfff;
 }
 
+#header a.button {
+  padding-top: 5px;
+}
+
 #header img {
   padding: 0;
   margin: 0;
@@ -102,6 +106,24 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 40px;
   display: flex;
 }
+#header .event-request {
+  margin-top: 40px;
+  display: flex;
+}
+
+/* make a long gray button */
+.event-request a {
+  padding: 7px 10px;
+  border-radius: 5px;
+  background-color: #18d26e;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: ease-in-out 0.3s;
+}
+
 #header .social-links a {
   font-size: 16px;
   display: flex;
@@ -129,6 +151,9 @@ h1, h2, h3, h4, h5, h6 {
   #header .social-links {
     margin-top: 15px;
   }
+  #header .event-request {
+    margin-top: 15px;
+  }
   #header .container {
     display: flex;
     flex-direction: column;
@@ -137,6 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Header Top */
+
 #header.header-top {
   height: 80px;
   position: fixed;
@@ -145,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   background: rgba(0, 0, 0, 0.9);
 }
-#header.header-top .social-links, #header.header-top h2 {
+#header.header-top .social-links, #header.header-top h2, #header.header-top .event-request {
   display: none;
 }
 #header.header-top h1 {
@@ -619,15 +645,15 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Entrepreneurship
 --------------------------------------------------------------*/
-.services .icon-box {
+.entrepreneurship .icon-box {
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
 }
-.services .icon-box .icon {
+.entrepreneurship .icon-box .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
@@ -640,11 +666,11 @@ section .container {
   margin-bottom: 20px;
   transform-style: preserve-3d;
 }
-.services .icon-box .icon i {
+.entrepreneurship .icon-box .icon i {
   color: #fff;
   font-size: 28px;
 }
-.services .icon-box .icon::before {
+.entrepreneurship .icon-box .icon::before {
   position: absolute;
   content: "";
   left: -8px;
@@ -656,43 +682,43 @@ section .container {
   transition: all 0.3s ease-out 0s;
   transform: translateZ(-1px);
 }
-.services .icon-box h4 {
+.entrepreneurship .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
 }
-.services .icon-box h4 a {
+.entrepreneurship .icon-box h4 a {
   color: #fff;
 }
-.services .icon-box p {
+.entrepreneurship .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
-.services .icon-box:hover {
+.entrepreneurship .icon-box:hover {
   background: #18d26e;
   border-color: #18d26e;
 }
-.services .icon-box:hover .icon {
+.entrepreneurship .icon-box:hover .icon {
   background: #fff;
 }
-.services .icon-box:hover .icon i {
+.entrepreneurship .icon-box:hover .icon i {
   color: #18d26e;
 }
-.services .icon-box:hover .icon::before {
+.entrepreneurship .icon-box:hover .icon::before {
   background: #35e888;
 }
-.services .icon-box:hover h4 a, .services .icon-box:hover p {
+.entrepreneurship .icon-box:hover h4 a, .entrepreneurship .icon-box:hover p {
   color: #fff;
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# research
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+.research .research-item {
   margin-bottom: 30px;
 }
-.portfolio #portfolio-flters {
+.research #research-flters {
   padding: 0;
   margin: 0 auto 15px auto;
   list-style: none;
@@ -700,7 +726,7 @@ section .container {
   border-radius: 50px;
   padding: 2px 15px;
 }
-.portfolio #portfolio-flters li {
+.research #research-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 16px 10px 16px;
@@ -714,20 +740,20 @@ section .container {
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
 }
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.research #research-flters li:hover, .research #research-flters li.filter-active {
   background: #18d26e;
 }
-.portfolio #portfolio-flters li:last-child {
+.research #research-flters li:last-child {
   margin-right: 0;
 }
-.portfolio .portfolio-wrap {
+.research .research-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
   background: rgba(0, 0, 0, 0.6);
 }
-.portfolio .portfolio-wrap::before {
+.research .research-wrap::before {
   content: "";
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -739,7 +765,7 @@ section .container {
   z-index: 2;
   opacity: 0;
 }
-.portfolio .portfolio-wrap .portfolio-info {
+.research .research-wrap .research-info {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -754,7 +780,7 @@ section .container {
   justify-content: center;
   align-items: center;
 }
-.portfolio .portfolio-wrap .portfolio-info::before {
+.research .research-wrap .research-info::before {
   display: block;
   content: "";
   width: 48px;
@@ -767,7 +793,7 @@ section .container {
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
-.portfolio .portfolio-wrap .portfolio-info::after {
+.research .research-wrap .research-info::after {
   display: block;
   content: "";
   width: 48px;
@@ -780,55 +806,55 @@ section .container {
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
-.portfolio .portfolio-wrap .portfolio-info h4 {
+.research .research-wrap .research-info h4 {
   font-size: 20px;
   color: #fff;
   font-weight: 600;
 }
-.portfolio .portfolio-wrap .portfolio-info p {
+.research .research-wrap .research-info p {
   color: #ffffff;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
 }
-.portfolio .portfolio-wrap .portfolio-links {
+.research .research-wrap .research-links {
   text-align: center;
   z-index: 4;
 }
-.portfolio .portfolio-wrap .portfolio-links a {
+.research .research-wrap .research-links a {
   color: #fff;
   margin: 0 2px;
   font-size: 28px;
   display: inline-block;
   transition: 0.3s;
 }
-.portfolio .portfolio-wrap .portfolio-links a:hover {
+.research .research-wrap .research-links a:hover {
   color: #63eda3;
 }
-.portfolio .portfolio-wrap:hover::before {
+.research .research-wrap:hover::before {
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   opacity: 1;
 }
-.portfolio .portfolio-wrap:hover .portfolio-info {
+.research .research-wrap:hover .research-info {
   opacity: 1;
 }
-.portfolio .portfolio-wrap:hover .portfolio-info::before {
+.research .research-wrap:hover .research-info::before {
   top: 15px;
   left: 15px;
 }
-.portfolio .portfolio-wrap:hover .portfolio-info::after {
+.research .research-wrap:hover .research-info::after {
   bottom: 15px;
   right: 15px;
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# research Details
 --------------------------------------------------------------*/
-.portfolio-details {
+.research-details {
   padding-top: 40px;
   background: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -838,51 +864,51 @@ section .container {
   bottom: 0;
   overflow-y: auto;
 }
-.portfolio-details .container {
+.research-details .container {
   padding-top: 20px;
   padding-bottom: 40px;
 }
-.portfolio-details .portfolio-title {
+.research-details .research-title {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-.portfolio-details .portfolio-info {
+.research-details .research-info {
   padding-top: 45px;
 }
-.portfolio-details .portfolio-info h3 {
+.research-details .research-info h3 {
   font-size: 22px;
   font-weight: 400;
   margin-bottom: 20px;
 }
-.portfolio-details .portfolio-info ul {
+.research-details .research-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
-.portfolio-details .portfolio-info ul li + li {
+.research-details .research-info ul li + li {
   margin-top: 10px;
 }
-.portfolio-details .portfolio-info p {
+.research-details .research-info p {
   font-size: 15px;
   padding: 15px 0 0 0;
 }
 @media (max-width: 992px) {
-  .portfolio-details .portfolio-info {
+  .research-details .research-info {
     padding-top: 20px;
   }
 }
-.portfolio-details .swiper-pagination {
+.research-details .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
-.portfolio-details .swiper-pagination .swiper-pagination-bullet {
+.research-details .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.3);
 }
-.portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
+.research-details .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #18d26e;
 }
 
