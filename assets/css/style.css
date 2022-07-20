@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 .navbar li + li {
-  margin-left: 30px;
+  margin-left: 12px;
 }
 .navbar a, .navbar a:focus {
   display: flex;
@@ -406,6 +406,14 @@ section .container {
   line-height: 0;
 }
 
+.rmore {
+  color:#15bb62;
+  text-decoration: none;
+  margin-top: 0px;
+  padding: 0%;
+  padding-top: 0%;
+}
+
 .about-me .content a.button {
   -webkit-appearance: button;
   -moz-appearance: button;
@@ -423,6 +431,10 @@ section .container {
 
 .about-me .content p:last-child {
   margin-bottom: 0;
+}
+
+.about-me .a {
+  margin-top: 0;
 }
 
 /*--------------------------------------------------------------
@@ -645,15 +657,15 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Entrepreneurship
+# Creator
 --------------------------------------------------------------*/
-.entrepreneurship .icon-box {
+.creator .icon-box {
   text-align: center;
   background: rgba(204, 204, 204, 0.1);
   padding: 80px 20px;
   transition: all ease-in-out 0.3s;
 }
-.entrepreneurship .icon-box .icon {
+.creator .icon-box .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
@@ -666,11 +678,11 @@ section .container {
   margin-bottom: 20px;
   transform-style: preserve-3d;
 }
-.entrepreneurship .icon-box .icon i {
+.creator .icon-box .icon i {
   color: #fff;
   font-size: 28px;
 }
-.entrepreneurship .icon-box .icon::before {
+.creator .icon-box .icon::before {
   position: absolute;
   content: "";
   left: -8px;
@@ -682,33 +694,33 @@ section .container {
   transition: all 0.3s ease-out 0s;
   transform: translateZ(-1px);
 }
-.entrepreneurship .icon-box h4 {
+.creator .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
 }
-.entrepreneurship .icon-box h4 a {
+.creator .icon-box h4 a {
   color: #fff;
 }
-.entrepreneurship .icon-box p {
+.creator .icon-box p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
-.entrepreneurship .icon-box:hover {
+.creator .icon-box:hover {
   background: #18d26e;
   border-color: #18d26e;
 }
-.entrepreneurship .icon-box:hover .icon {
+.creator .icon-box:hover .icon {
   background: #fff;
 }
-.entrepreneurship .icon-box:hover .icon i {
+.creator .icon-box:hover .icon i {
   color: #18d26e;
 }
-.entrepreneurship .icon-box:hover .icon::before {
+.creator .icon-box:hover .icon::before {
   background: #35e888;
 }
-.entrepreneurship .icon-box:hover h4 a, .entrepreneurship .icon-box:hover p {
+.creator .icon-box:hover h4 a, .creator .icon-box:hover p {
   color: #fff;
 }
 
