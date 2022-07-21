@@ -796,7 +796,7 @@
         <div class="col-md-6 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-map"></i>
-            <h3>Rishab's Hometown Location</h3>
+            <h3>Rishab's Hometown</h3>
             <p>Portland, Oregon</p>
           </div>
         </div>
@@ -818,20 +818,20 @@
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-envelope"></i>
-            <h3>Contact Rishab</h3>
-            <p>rishab@samyakscience.com</p>
+            <h3>Email Contact</h3>
+            <p>Email rishab (at) samyakscience (dot) com or fill out the form below!</p>
           </div>
         </div>
         <div class="col-md-6 mt-4 d-flex align-items-stretch">
           <div class="info-box">
             <i class="bx bx-phone-call"></i>
-            <h3>Call Me</h3>
+            <h3>Phone Contact</h3>
             <p>Due to high traffic, this number is hidden. Please fill out the form below instead and we'll get right back to you!</p>
           </div>
         </div>
       </div>
-
-      <form method="post" action="http://formspree.io/rishab@samyakscience.com" name="gform" id="gform" enctype="text/plain" class="php-email-form mt-4" target="hidden_iframe" onsubmit="submitted=true;">
+      <br>
+      <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScL0VD7nLc6aviFGipQG2kce7dum-1eBxWs10Eme2OV0JUh5g/formResponse?" target="hidden_iframe" onsubmit="submitted=true;" class="myform">
         <div class="row">
           <div class="col-md-6 form-group">
             <input type="text" name="entry.930188938" class="form-control" id="entry.930188938" placeholder="Your Name" required>
@@ -846,17 +846,18 @@
         <div class="form-group mt-3">
           <textarea class="form-control" name="entry.1337538538" id="entry.1337538538" rows="5" placeholder="Message" required></textarea>
         </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
+        <br>
+        <div class="text-center"><input type="submit" value="Submit"></div>
       </form>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script type="text/javascript">var submitted=false;</script>
+
       <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>      <script type="text/javascript">var submitted=false;</script>
+
       <script type="text/javascript">
       $('#gform').on('submit', function(e) {
         $('#gform *').fadeOut(2000);
-        $('#gform').prepend('Your submission has been processed...');
+        $('#gform').prepend('Thanks for your message! We\'ll forward your query to Rishab and get back to you as soon as we can!');
         });
       </script>
     </div>
