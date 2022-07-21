@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #18d26e;
 }
 
-.row .social-links a {
+.scol-lg-8 .social-links a {
   font-size: 16px;
   display: inline-flex;
   justify-content: center;
@@ -161,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 40px;
   height: 40px;
 }
-.row .social-links a:hover {
+.scol-lg-8 .social-links  a:hover {
   background: #18d26e;
 }
 
