@@ -831,29 +831,34 @@
         </div>
       </div>
 
-      <form method="post" action="http://formspree.io/rishab@samyakscience.com" name="myemailform" role="form" class="php-email-form mt-4">
+      <form method="post" action="http://formspree.io/rishab@samyakscience.com" name="gform" id="gform" enctype="text/plain" class="php-email-form mt-4" target="hidden_iframe" onsubmit="submitted=true;">
         <div class="row">
           <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            <input type="text" name="entry.930188938" class="form-control" id="entry.930188938" placeholder="Your Name" required>
           </div>
           <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            <input type="email" class="form-control" name="entry.670576388" id="entry.670576388" placeholder="Your Email" required>
           </div>
         </div>
         <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          <input type="text" class="form-control" name="entry.508209796" id="entry.508209796" placeholder="Subject" required>
         </div>
         <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          <textarea class="form-control" name="entry.1337538538" id="entry.1337538538" rows="5" placeholder="Message" required></textarea>
         </div>
         <div class="my-3">
           <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
         </div>
         <div class="text-center"><button type="submit">Send Message</button></div>
       </form>
-
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>      <script type="text/javascript">var submitted=false;</script>
+      <script type="text/javascript">
+      $('#gform').on('submit', function(e) {
+        $('#gform *').fadeOut(2000);
+        $('#gform').prepend('Your submission has been processed...');
+        });
+      </script>
     </div>
   </section><!-- End Contact Section -->
 
