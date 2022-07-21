@@ -10,6 +10,7 @@ body::before {
   position: fixed;
   background: #040404 url("../img/bg.jpeg") top right no-repeat;
   background-size: cover;
+  background-position: 0%;
   left: 0;
   right: 0;
   top: 0;
@@ -115,13 +116,19 @@ h1, h2, h3, h4, h5, h6 {
 .event-request a {
   padding: 7px 10px;
   border-radius: 5px;
-  background-color: #18d26e;
+  background-color: #15a85aa9;
   color: #fff;
   font-size: 13px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
+  width: 230px;
+  align-items: center;
   transition: ease-in-out 0.3s;
+}
+
+.about-me .event-request a {
+  width: 54%;
 }
 
 #header .social-links a {
@@ -140,6 +147,24 @@ h1, h2, h3, h4, h5, h6 {
 #header .social-links a:hover {
   background: #18d26e;
 }
+
+.row .social-links a {
+  font-size: 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  line-height: 1;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.row .social-links a:hover {
+  background: #18d26e;
+}
+
 @media (max-width: 992px) {
   #header h1 {
     font-size: 36px;
@@ -270,12 +295,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 991px) {
-  .mobile-nav-toggle {
-    display: block;
-  }
-
   .navbar ul {
     display: none;
+  }
+  .mobile-nav-toggle {
+    display: block;
   }
 }
 .navbar-mobile {
