@@ -409,9 +409,7 @@ section .container {
 .rmore {
   color:#15bb62;
   text-decoration: none;
-  margin-top: 0px;
-  padding: 0%;
-  padding-top: 0%;
+  font-weight: 800;
 }
 
 .about-me .content a.button {
@@ -532,6 +530,13 @@ section .container {
 }
 .interests .icon-box:hover {
   background: rgba(255, 255, 255, 0.12);
+}
+
+.resume a {
+  color: #18d26e;
+  text-decoration: none;
+  display: inline;
+  padding: 0%;
 }
 
 /*--------------------------------------------------------------
